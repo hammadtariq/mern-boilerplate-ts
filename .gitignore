@@ -1,0 +1,17 @@
+# editor settings
+**/.vscode/*
+**/.idea/*
+
+
+# packages folder
+backend/node_modules
+frontend/node_modules
+frontend/build
+
+#lock files
+package-lock.json
+
+# env files
+.env
+node_modules/
+yarn-error.log

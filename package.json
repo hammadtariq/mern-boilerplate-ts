@@ -1,0 +1,37 @@
+{
+  "name": "simple-calculator",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "scripts": {
+    "pretty-quick": "pretty-quick",
+    "lint-staged": "lint-staged"
+  },
+  "engines": {
+    "node": ">=10.19.0",
+    "npm": ">=6.13.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "pretty-quick --staged"
+    ],
+    "*.+(json|scss|css|md)": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.0.2"
+  }
+}
